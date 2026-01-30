@@ -13,8 +13,8 @@
 - SolidWorks（VBA 宏环境）
 
 ## 使用方式
-1. 将 `EXE.swp` 或 `EXE_Ver2.0.swp` 与 `SolidWorksAppList.txt` 放在同一目录
-2. 在 SolidWorks 中运行宏入口 `main`
+1. 将  `EXE_Ver2.0.swp` 与 `SolidWorksAppList.txt` 放在同一目录
+2. 在 SolidWorks 中执行宏
 3. 在弹出的窗体中选择程序，双击或按回车启动
 
 ## 配置文件说明（SolidWorksAppList.txt）
@@ -45,9 +45,17 @@ C:\Path\To\App.exe
 此时显示名称会自动取文件名。
 
 ## 目录结构（当前目录）
-- `EXE_Ver2.0.swp`：宏文件版本 2.0
+- `EXE_Ver2.0.swp`：宏文件本体
+- `frmAppLauncher.bas`：窗体代码
+- `main.bas`：入口模块
+- `mdlAPI.bas`：API 声明模块
+- `mdlAppList.bas`：应用列表管理模块
+- `mdlTypes.bas`：公共类型定义模块
 - `Microsoft Visual Basic for Applications.pdf`：源码/说明导出
+- `README.md`：项目说明
 - `SolidWorksAppList.txt`：应用列表配置
+- `LICENSE`：MIT 许可文本
+- `.codemap/`：辅助索引文件
 
 ## 常见问题
 - **初始化错误 / 配置路径为空**：宏可能不是从文件运行，系统会回退到文档目录；检查 `Documents` 下是否生成配置文件。
