@@ -63,7 +63,7 @@ C:\Path\To\App.exe
 - **列表为空**：配置文件为空或格式不正确；按“显示名称|完整路径”填写。
 
 ## 作者
-Made By Tika
+Made By 亓翎_Re-TikaRa
 
 ## 许可
 MIT License。详见 `LICENSE`。
